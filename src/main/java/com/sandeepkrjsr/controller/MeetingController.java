@@ -54,41 +54,5 @@ public class MeetingController {
 		List<Integer> participants = service.meetingConflicts(startTime);
 		return participants.toString();
 	}
-	
-//	/**
-//	 * Given a meeting request, this api will find out all participants have meeting conflicts
-//	 * 1. Check for input validations
-//	 * 2. Check for meeting conflict
-//	 * 3. Return the participants
-//	 * @param time
-//	 * @return String
-//	 */
-//	@GetMapping("/conflicts")
-//	public String meetingConflict(@RequestParam String time) {
-//		LocalDateTime startTime = DateTimeUtils.getDateTime(time);
-//		if(!InputValidation.validateDateTime(startTime)) return "Invalid Input";
-//		List<Integer> participants = service.meetingConflicts(startTime);
-//		return participants.toString();
-//	}
-	
-//	/**
-//	 * Given a meeting request, this api will find out all participants have meeting conflicts
-//	 * 1. Check for input validations
-//	 * 2. Check for meeting conflict
-//	 * 3. Return the participants
-//	 * @param meetingTime
-//	 * @param duration
-//	 * @return String
-//	 */
-//	@GetMapping("/conflicts")
-//	public String meetingConflicts(@RequestParam String meetingTime, @RequestParam int duration) {
-//		LocalDateTime startTime = DateTimeUtils.getDateTime(meetingTime);
-//		LocalDateTime endTime = DateTimeUtils.getDateTime(meetingTime).plusMinutes(duration);
-//		if(!InputValidation.validateDuration(duration)
-//				|| !InputValidation.validateDateTime(startTime))
-//			return "Invalid Input";
-//		List<Integer> participants = service.meetingConflicts(startTime, endTime);
-//		return participants.toString();
-//	}
 
 }

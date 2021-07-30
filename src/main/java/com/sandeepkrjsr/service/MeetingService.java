@@ -33,56 +33,6 @@ public class MeetingService {
 		return true;
 	}
 
-//	/**
-//	 * This method will find out all participants have meeting conflicts
-//	 * 1. Check for meeting conflict
-//	 * TODO 2. Return the participants
-//	 * @param dateTime
-//	 * @param duration
-//	 * @return List of participants
-//	 */
-//	public List<Integer> meetingConflicts(LocalDateTime startTime, LocalDateTime endTime) {
-//		Iterable<Meeting> meetings = repository.findAll();
-//		List<Meeting> meetingList = new ArrayList<>();
-//		meetings.forEach(meeting -> {
-//			meetingList.add(meeting);
-//		});
-//		List<Integer> conflictMeetingIds = new ArrayList<>();
-//		meetingList.forEach(meeting -> {
-//			if(startTime.isAfter(meeting.getStartTime())
-//					|| endTime.isBefore(meeting.getEndTime())) {
-//				conflictMeetingIds.add(meeting.getPkMeetingId());
-//			}
-//		});
-//		// TODO 2. Return the participants
-//		return conflictMeetingIds;
-//	}
-	
-//	/**
-//	 * This method will find out all participants have meeting conflicts
-//	 * 1. Check for meeting conflict
-//	 * TODO 2. Return the participants
-//	 * @param dateTime
-//	 * @param duration
-//	 * @return List of participants
-//	 */
-//	public List<Integer> meetingConflicts(LocalDateTime startTime, LocalDateTime endTime) {
-//		//List<Meeting> meetings = repository.findAll();
-//		List<Meeting> meetings = new ArrayList<>();
-//		repository.findAll().forEach(m -> {
-//			meetings.add(m);
-//		});
-//		List<Integer> conflictMeetingIds = new ArrayList<>();
-//		meetings.forEach(m -> {
-//			if(startTime.isAfter(m.getStartTime())
-//					|| endTime.isBefore(m.getEndTime())) {
-//				conflictMeetingIds.add(m.getPkMeetingId());
-//			}
-//		});
-//		// TODO 2. Return the participants
-//		return conflictMeetingIds;
-//	}
-
 	/**
 	 * This method will find out all participants have meeting conflicts
 	 * 1. Check for meeting conflict
